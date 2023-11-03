@@ -5,7 +5,7 @@
 
 /* Heading Font */
 
-@font-face {
+/* @font-face {
     font-family: 'space_groteskbold';
     src: url('../fonts/spacegrotesk-bold-webfont.woff2') format('woff2'),
          url('../fonts/spacegrotesk-bold-webfont.woff') format('woff');
@@ -30,18 +30,22 @@
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 
 .space-regular {
-    font-family: "space_groteskregular";
+    font-family: "Quantico";
 }
 
 .space-medium {
-    font-family: "space_groteskmedium";
+    font-family: "Quantico";
 }
 
 .space-bold {
-    font-family: "space_groteskbold";
+    font-family: "Quantico";
+}
+
+body {
+    font-family: "Montserrat";
 }
 
 /* General */

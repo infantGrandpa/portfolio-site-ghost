@@ -2,6 +2,8 @@
 
 <main>
     {{#post}}
+    {{#match @page.show_title_and_feature_image}}
+    {{/match}}
     <div class="border-b border-gray-100 pb-16">
         <article class="{{post_class}}">
             <div class="bg-[#f6f7f8] py-24">
