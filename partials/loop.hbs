@@ -9,7 +9,7 @@
                             {{#if profile_image}}
                                 <img src="{{img_url profile_image size="xxs"}}" data-src="{{img_url profile_image size="xs"}}" alt="{{name}}" class="lazyload object-cover absolute w-full h-full rounded-full">
                             {{else}}
-                                <span class="trex_has_text text-white space-bold uppercase flex items-center justify-center h-full">
+                                <span class="trex_has_text text-white display-font uppercase flex items-center justify-center h-full">
                                     {{name}}
                                 </span>
                             {{/if}}
@@ -49,7 +49,7 @@
     {{/if}}
     {{#if title}}
         <a href="{{url}}">
-            <h3 class="mb-3 text-[23px] space-bold second-color leading-7 line-clamp-2">
+            <h3 class="mb-3 text-[23px] display-font second-color leading-7 line-clamp-2">
                 {{title}}
             </h3>
         </a>

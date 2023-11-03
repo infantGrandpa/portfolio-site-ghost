@@ -29,7 +29,7 @@
                                 {{/if}}
                             </div>
                         </div>
-                        <h1 class="text-5xl space-bold second-color mt-4">
+                        <h1 class="text-5xl display-font second-color mt-4">
                             {{title}}
                         </h1>
                         <div class="text-base font-medium text-grey mt-4">
@@ -45,7 +45,7 @@
                                             {{#if profile_image}}
                                                 <img src="{{img_url profile_image size="xxs"}}" data-src="{{img_url profile_image size="xs"}}" alt="{{name}}" class="lazyload object-cover absolute w-full h-full rounded-full">
                                             {{else}}
-                                                <span class="trex_has_text text-white space-bold uppercase flex items-center justify-center h-full">
+                                                <span class="trex_has_text text-white display-font uppercase flex items-center justify-center h-full">
                                                     {{name}}
                                                 </span>
                                             {{/if}}
@@ -96,7 +96,7 @@
                         {{content}}
                     </div>
                     <div class="border-t border-b border-gray-100 pt-6 pb-9 mt-16 text-center">
-                        <span class="uppercase space-bold text-sm">{{t "share"}}</span>
+                        <span class="uppercase display-font text-sm">{{t "share"}}</span>
                         <div class="flex justify-center space-x-3 mt-4">
                             <a href="https://www.facebook.com/share.php?u={{url absolute="true"}}" class="w-[40px] h-[40px] flex justify-center items-center bg-[#f6f7f8] hover:bg-gray-100">
                                 {{> 'icons/facebook-share'}}

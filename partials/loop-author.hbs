@@ -3,10 +3,10 @@
         {{#if profile_image}}
             <img src="{{img_url profile_image size="xxs"}}" data-src="{{img_url profile_image size="xs"}}" alt="{{name}}" class="hover:scale-[1.08] transition duration-300 ease-in-out fadeup lazyload object-cover absolute w-full h-full">
         {{else}}
-            <span class="trex_has_text text-3xl text-white space-bold uppercase flex items-center justify-center h-full">{{name}}</span>
+            <span class="trex_has_text text-3xl text-white display-font uppercase flex items-center justify-center h-full">{{name}}</span>
         {{/if}}
     </a>
-    <div class="space-bold text-xl mb-2">
+    <div class="display-font text-xl mb-2">
         <a href="{{url}}">
             {{name}}
         </a>
