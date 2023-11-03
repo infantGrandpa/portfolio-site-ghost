@@ -3,7 +3,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      'body': ['Poppins', 'sans-serif']
+      'body': ['Montserrat', 'sans-serif']
     },
     container: {
       center: true,
