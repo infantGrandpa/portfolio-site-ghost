@@ -16,7 +16,13 @@
                 {{@site.description}}
             </h1>
             <p class="text-2xl second-color">
-                {{@custom.full_description}}
+                {{#if @custom.full_description}}
+                    {{@custom.full_description}}
+                {{else}}
+                    I turn 'lost in translation' into collaboration, marrying
+                    design empathy with engineering logic to deliver standout UX
+                    your users will love.
+                {{/if}}
             </p>
         </div>
     </div>
