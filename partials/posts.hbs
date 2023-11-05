@@ -19,13 +19,15 @@
                         {{/post}}
                     {{/if}}
                 {{/get}}
-                <div class="lg:basis-2/4 flex justify-end items-center space-x-1">
+                <div class="lg:basis-2/4 flex justify-between items-center space-x-1">
+                <h2>Blog Posts</h2>
+                <div>
                     <a href="{{@site.url}}/blog/" class="text-xs uppercase text-grey font-semibold">{{t "discover more"}}</a>
                     <i class='bx bx-right-arrow-alt text-grey'></i>
                 </div>
+                </div>
             </div>
             <!-- Posts -->
-            <h2 class="display-font">Blog Posts</h2>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {{#foreach posts}}
                     {{> 'loop'}}
