@@ -1359,6 +1359,11 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1372,11 +1377,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .mb-10 {
@@ -1592,6 +1592,10 @@ video {
 
 .basis-2\/4 {
   flex-basis: 50%;
+}
+
+.basis-full {
+  flex-basis: 100%;
 }
 
 .transform {
@@ -2927,14 +2931,14 @@ form.success .hide_success {
     grid-column: span 3 / span 3;
   }
 
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:mr-14 {
