@@ -1,7 +1,7 @@
 {{#get "posts" filter="tag:hash-project" limit="3" include="tags"}}
 {{#match posts.length ">" 0}}
     <section class="bg-[#f6f7f8] py-16">
-        <div class="container">
+        <div class="md:container md:mx-auto">
             <!-- Projects Title -->
             <div class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row justify-end items-start mb-12">
                 {{#get "pages" filter="slug:project" limit="1" as |post|}}
