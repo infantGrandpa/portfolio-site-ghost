@@ -538,8 +538,8 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 3rem;
-  padding-left: 3rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 @media (min-width: 1350px) {
@@ -1389,6 +1389,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1943,6 +1948,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -2059,6 +2069,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -2581,8 +2596,8 @@ form.success .hide_success {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
   @media (min-width: 1350px) {
@@ -2979,6 +2994,11 @@ form.success .hide_success {
     margin-right: auto;
   }
 
+  .md\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .md\:mr-14 {
     margin-right: 3.5rem;
   }
@@ -3028,6 +3048,11 @@ form.success .hide_success {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
