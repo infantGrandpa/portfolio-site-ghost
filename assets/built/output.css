@@ -1379,6 +1379,11 @@ video {
   margin-right: auto;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1387,11 +1392,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
 }
 
 .mb-10 {
@@ -1424,10 +1424,6 @@ video {
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.mr-10 {
-  margin-right: 2.5rem;
 }
 
 .mr-3 {
@@ -1918,6 +1914,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -1946,11 +1947,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-2\.5 {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
 }
 
 .pb-16 {
@@ -2047,13 +2043,14 @@ video {
   font-size: 23px;
 }
 
-.text-\[44px\] {
-  font-size: 44px;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -2069,11 +2066,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -3003,16 +2995,8 @@ form.success .hide_success {
     margin-right: 3.5rem;
   }
 
-  .md\:block {
-    display: block;
-  }
-
   .md\:h-\[280px\] {
     height: 280px;
-  }
-
-  .md\:h-\[400px\] {
-    height: 400px;
   }
 
   .md\:h-\[500px\] {
@@ -3040,6 +3024,11 @@ form.success .hide_success {
     padding-right: 6rem;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -3048,11 +3037,6 @@ form.success .hide_success {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
@@ -3071,10 +3055,6 @@ form.success .hide_success {
 
   .lg\:h-\[600px\] {
     height: 600px;
-  }
-
-  .lg\:h-\[700px\] {
-    height: 700px;
   }
 
   .lg\:basis-2\/4 {
