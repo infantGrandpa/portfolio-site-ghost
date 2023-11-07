@@ -538,13 +538,45 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 1350px;
+    max-width: 640px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
 }
 
@@ -2586,13 +2618,45 @@ form.success .hide_success {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
-  @media (min-width: 1350px) {
+  @media (min-width: 640px) {
     .md\:container {
-      max-width: 1350px;
+      max-width: 640px;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+      padding-right: 6rem;
+      padding-left: 6rem;
     }
   }
 }
