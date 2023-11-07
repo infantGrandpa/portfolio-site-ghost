@@ -1,31 +1,6 @@
 <article class="h-auto bg-white rounded-[32px] p-6 pb-8 trex_post">
     {{^has tag="#project"}}
         <div class="flex justify-between flex-col mb-5 sm:mb-0 sm:flex-row">
-            <div class="flex items-center space-x-2 mb-5 justify-center sm:justify-start">
-                <!-- Author Image -->
-                <div class="flex -space-x-4">
-                    {{#foreach authors}}
-                        <a href="{{url}}" class="block relative h-[40px] w-[40px] {{#unless profile_image}} second-bg {{/unless}} rounded-full">
-                            {{#if profile_image}}
-                                <img src="{{img_url profile_image size="xxs"}}" data-src="{{img_url profile_image size="xs"}}" alt="{{name}}" class="lazyload object-cover absolute w-full h-full rounded-full">
-                            {{else}}
-                                <span class="trex_has_text text-white display-font uppercase flex items-center justify-center h-full">
-                                    {{name}}
-                                </span>
-                            {{/if}}
-                        </a>
-                    {{/foreach}}
-                </div>
-                <!-- Author Name -->
-                <div class="space-x-1 text-xs text-grey font-medium hidden lg:flex">
-                    {{#foreach authors}}
-                        <a href="{{url}}" class="hover:underline" title="{{name}}">
-                            {{name}}
-                        </a>
-                        <span class="last:hidden">&</span>
-                    {{/foreach}}
-                </div>
-            </div>
             <div class="flex space-x-2 justify-center sm:justify-end">
                 {{#if featured}}
                     <div class="h-[40px] w-[40px] flex justify-center items-center bg-[#f6f7f8] rounded-full border-gray-200 border" data-tippy-content="{{t 'Featured post'}}" data-tippy-placement="bottom" data-tippy-animation="fade">
