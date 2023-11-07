@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./assets/js/main.js","./**/*.{html,hbs}"],
   darkMode: 'class',
@@ -10,7 +11,7 @@ module.exports = {
       padding: {
         DEFAULT: '1.5rem',
         sm: '2rem',
-        md: '3rem',
+        'md': '3rem',
         lg: '4rem',
         xl: '5rem',
         '2xl': '1rem',
