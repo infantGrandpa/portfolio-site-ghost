@@ -2347,7 +2347,15 @@ form.success .hide_success {
   display: none;
 }
 
-/* Back top top */
+.bg-center-x {
+  background-position-x: center;
+}
+
+.bg-center-y {
+  background-position-y: center;
+}
+
+/* Back to top */
 
 .cd-top {
   width: 40px;
