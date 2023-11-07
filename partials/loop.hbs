@@ -1,4 +1,4 @@
-<article href="{{url}}" class="h-auto bg-white rounded-[32px] p-6 pb-8 shadow-md trex_post">
+<article class="h-auto bg-white rounded-[32px] p-6 pb-8 shadow-md trex_post">
     {{^has tag="#project"}}
         <div class="flex justify-between flex-col mb-5 sm:mb-0 sm:flex-row">
             <div class="flex space-x-2 justify-center sm:justify-end">
@@ -34,10 +34,8 @@
         {{excerpt}}
     </div>
     
-    
-    <hr class="border-gray-100 my-4">
-
     {{^has tag="#project"}}
+        <hr class="border-gray-100 my-4">
         <div class="flex justify-between items-center">
             <a href="{{url}}" class="text-xs uppercase space-medium second-color">
                 {{t "Read more"}}
