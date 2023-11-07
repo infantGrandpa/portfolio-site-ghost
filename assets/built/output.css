@@ -538,15 +538,13 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 1350px) {
   .container {
     max-width: 1350px;
-    padding-right: 6rem;
-    padding-left: 6rem;
   }
 }
 
@@ -2588,15 +2586,13 @@ form.success .hide_success {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   @media (min-width: 1350px) {
     .md\:container {
       max-width: 1350px;
-      padding-right: 6rem;
-      padding-left: 6rem;
     }
   }
 }
