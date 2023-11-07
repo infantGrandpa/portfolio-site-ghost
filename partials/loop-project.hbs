@@ -1,5 +1,5 @@
 <article class="h-auto bg-white rounded-[32px] p-6 pb-8 trex_post">
-    {{!-- Project Goes here --}}
+    {{!-- Project Loop --}}
     {{#if feature_image}}
         <div class="relative mb-5">
             <a href="{{url}}" class="rounded-lg relative overflow-hidden aspect-square w-full block">
@@ -14,7 +14,7 @@
             </h3>
         </a>
     {{/if}}
-    <div class="text-grey text-sm font-medium line-clamp-2">
+    <div class="text-sm font-medium line-clamp-3">
         {{excerpt}}
     </div>
 </article>

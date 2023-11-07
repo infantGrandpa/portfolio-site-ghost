@@ -1,7 +1,7 @@
 <article class="h-auto bg-white rounded-[32px] p-6 pb-8 trex_post">
     {{^has tag="#project"}}
         <div class="flex justify-between flex-col mb-5 sm:mb-0 sm:flex-row">
-            {{!-- <div class="flex items-center space-x-2 mb-5 justify-center sm:justify-start">
+            <div class="flex items-center space-x-2 mb-5 justify-center sm:justify-start">
                 <!-- Author Image -->
                 <div class="flex -space-x-4">
                     {{#foreach authors}}
@@ -25,7 +25,7 @@
                         <span class="last:hidden">&</span>
                     {{/foreach}}
                 </div>
-            </div> --}}
+            </div>
             <div class="flex space-x-2 justify-center sm:justify-end">
                 {{#if featured}}
                     <div class="h-[40px] w-[40px] flex justify-center items-center bg-[#f6f7f8] rounded-full border-gray-200 border" data-tippy-content="{{t 'Featured post'}}" data-tippy-placement="bottom" data-tippy-animation="fade">
@@ -42,7 +42,7 @@
     {{/has}}
     {{#if feature_image}}
         <div class="relative mb-5">
-            <a href="{{url}}" class="rounded-lg relative overflow-hidden h-[300px] sm:h-[200px] md:h-[280px] lg:h-[360px] w-full block">
+            <a href="{{url}}" class="rounded-lg relative overflow-hidden aspect-square w-full block">
                 <img class="rounded-lg hover:scale-[1.08] transition duration-300 ease-in-out lazyload fadeup absolute object-cover object-top w-full h-full" src="{{img_url feature_image size="xxs"}}" data-src="{{img_url feature_image size="xl"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
             </a>
         </div>
@@ -54,20 +54,22 @@
             </h3>
         </a>
     {{/if}}
-    <div class="text-grey text-sm font-medium line-clamp-2">
+    <div class="text-sm font-medium line-clamp-3">
         {{excerpt}}
     </div>
-    {{^has tag="#project"}}
-        <hr class="border-gray-100 my-4">
-        <div class="flex justify-between items-center">
-            <a href="{{url}}" class="text-xs uppercase space-medium second-color">
-                {{t "Read more"}}
-            </a>
-            <div class="text-xs text-grey font-medium">
+    
+    <hr class="border-gray-100 my-4">
+
+    <div class="flex justify-between items-center">
+        <a href="{{url}}" class="text-xs uppercase space-medium second-color">
+            {{t "Read more"}}
+        </a>
+        <div class="text-xs text-grey font-medium">
+            {{^has tag="#project"}}
                 <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
-                <span> - </span>
-                <span>{{reading_time}}</span>
-            </div>
+                <span> - </span>    
+            {{/has}}
+            <span>{{reading_time}}</span>
         </div>
-    {{/has}}
+    </div>
 </article>
