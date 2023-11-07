@@ -1,19 +1,19 @@
 {{#get "posts" filter="tag:hash-project" limit="3" include="tags"}}
 {{#match posts.length ">" 0}}
-    <section class="bg-[#f6f7f8] py-16">
+    <section class="bg-[#f6f7f8] pt-8 pb-16">
         <div class="mx-3 md:mx-0 md:container md:mx-auto">
             <!-- Projects Title -->
-            <div class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row justify-end items-start mb-12">
+            <div class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row justify-end items-center mb-7">
                 {{#get "pages" filter="slug:project" limit="1" as |post|}}
                     {{#if post}}
                         {{#post}}
                             <div class="basis-2/4">
-                                <span class="text-xs uppercase text-grey font-semibold mb-2 block">
-                                    {{excerpt}}
-                                </span>
                                 <h2 class="display-font text-4xl second-color">
                                     {{title}}
                                 </h2>
+                                <p class="text-sm uppercase text-grey font-semibold mt-1 mb-2 block">
+                                    {{excerpt}}
+                                </p>
                             </div>
                         {{/post}}
                     {{/if}}
