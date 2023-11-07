@@ -553,6 +553,8 @@ video {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
 
@@ -2633,6 +2635,8 @@ form.success .hide_success {
   @media (min-width: 768px) {
     .md\:container {
       max-width: 768px;
+      padding-right: 3rem;
+      padding-left: 3rem;
     }
   }
 
