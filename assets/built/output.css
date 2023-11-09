@@ -1847,6 +1847,10 @@ video {
   background-size: cover;
 }
 
+.bg-\[center_top_1rem\] {
+  background-position: center top 1rem;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
