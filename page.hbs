@@ -2,29 +2,31 @@
 
 <main>
     {{#post}}
-    {{#match @page.show_title_and_feature_image}}
-    {{/match}}
-    <div class="border-b border-gray-100 pb-16">
-        <article class="{{post_class}}">
-            <div class="bg-[#f6f7f8] py-24">
-                <div class="text-center max-w-[700px] mx-auto">
-                    <h1 class="text-6xl display-font main-color">
-                        {{title}}
-                    </h1>
-                    <div class="text-base font-medium text-grey mt-6">
-                        {{excerpt}}
+        {{#match @page.show_title_and_feature_image}}{{/match}}
+        <div class="border-b border-gray-100 pb-16">
+            <article class="{{post_class}}">
+                <div class="bg-[#f6f7f8] py-24">
+                    <div class="text-center max-w-[700px] mx-auto">
+                        <h1 class="display-font main-color">
+                            {{title}}
+                        </h1>
+                        <div class="text-base font-medium text-grey mt-6">
+                            {{excerpt}}
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <div class="max-w-[1100px] mx-auto px-10 pt-10">
-                    <div  id="trex_article_content" class="prose-base prose-img:m-0 prose-hr:border-gray-200 font-medium prose-headings:main-color prose-figcaption:main-color">
-                        {{content}}
+                <div class="container">
+                    <div class="max-w-[1100px] mx-auto px-10 pt-10">
+                        <div
+                            id="trex_article_content"
+                            class="prose-base prose-img:m-0 prose-hr:border-gray-200 font-medium prose-headings:main-color prose-figcaption:main-color"
+                        >
+                            {{content}}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </article>
-    </div>
+            </article>
+        </div>
     {{/post}}
 </main>
