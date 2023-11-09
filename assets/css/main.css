@@ -109,14 +109,6 @@ form.success .hide_success {
     display: none;
 }
 
-.bg-center-x {
-    background-position-x: center;
-}
-
-.bg-center-y {
-    background-position-y: center;
-}
-
 @layer utilities {
 
     .main-bg {
