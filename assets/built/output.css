@@ -3042,6 +3042,10 @@ form.success .hide_success {
     grid-column: span 3 / span 3;
   }
 
+  .md\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
