@@ -434,6 +434,28 @@ video {
   display: none;
 }
 
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -2251,28 +2273,6 @@ video {
 
 .display-font {
   font-family: "Quantico";
-}
-
-h1 {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-h2 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-@media (max-width: 1280px) {
-  h1 {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
 }
 
 /* General */
