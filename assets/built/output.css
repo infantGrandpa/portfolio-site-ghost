@@ -437,16 +437,19 @@ video {
 h1 {
   font-size: 3rem;
   line-height: 1;
+  font-family: "Quantico";
 }
 
 h2 {
   font-size: 2.25rem;
   line-height: 2.5rem;
+  font-family: "Quantico";
 }
 
 h3 {
   font-size: 1.5rem;
   line-height: 2rem;
+  font-family: "Quantico";
 }
 
 @media (max-width: 1280px) {

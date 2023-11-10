@@ -10,15 +10,15 @@
 
 @layer base {
     h1 {
-        @apply text-5xl;
+        @apply text-5xl display-font;
     }
 
     h2 {
-        @apply text-4xl;
+        @apply text-4xl display-font;
     }
 
     h3 {
-        @apply text-2xl;
+        @apply text-2xl display-font;
     }
 
     @media (max-width: 1280px) {
