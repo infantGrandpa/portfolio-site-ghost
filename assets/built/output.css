@@ -2445,7 +2445,10 @@ form.success .hide_success {
 }
 
 .project-tools-list {
-  margin-left: 12px;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-left: 4px solid var(--second-color);
 }
 
 .project-tools-list > ul {
@@ -2454,11 +2457,20 @@ form.success .hide_success {
   padding: 0;
 }
 
+.project-tools-list > ul:first-child {
+  margin-bottom: 18px;
+}
+
 .project-tools-list > ul > li {
   padding: 0;
   margin: 0;
   line-height: 1.5rem;
   list-style-type: none;
+  padding-top: 4px;
+}
+
+.project-tools-list > h3 {
+  margin: 0;
 }
 
 :is(.dark .dark\:prose-invert) {
