@@ -2457,7 +2457,7 @@ form.success .hide_success {
   padding: 0;
 }
 
-.project-tools-list > ul:first-child {
+.project-tools-list > ul:first-of-type {
   margin-bottom: 18px;
 }
 
