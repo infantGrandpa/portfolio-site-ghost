@@ -2275,6 +2275,14 @@ button {
   transition-duration: 75ms;
 }
 
+ul > li {
+  list-style-type: disc;
+}
+
+ol > li {
+  list-style-type: decimal;
+}
+
 /* Utilities */
 
 .lazyload {
@@ -2613,6 +2621,27 @@ form.success .hide_success {
 .project-intro {
   display: flex;
   flex-direction: row;
+}
+
+.project-details {
+  margin-right: 12px;
+}
+
+.project-tools-list {
+  margin-left: 12px;
+}
+
+.project-tools-list > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-tools-list > ul > li {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5rem;
+  list-style-type: none;
 }
 
 :is(.dark .dark\:prose-invert) {
