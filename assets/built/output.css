@@ -2435,191 +2435,159 @@ form.success .hide_success {
 
 /* Post Content */
 
+/* 
 #trex_project_infos {
-  display: none;
+    display: none;
 }
 
 #trex_article_content blockquote {
-  border-left: 4px solid #d8fb52;
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+    border-left: 4px solid #d8fb52;
+    @apply text-gray-500;
 }
 
 #trex_article_content p {
-  color: #aaa;
+    @apply text-grey;
 }
 
 #trex_article_content .kg-card.kg-product-card img.kg-product-card-image {
-  margin-top: 0px;
+    margin-top: 0px;
 }
 
 #trex_article_content figure .kg-card-hascaption figcaption,
 #trex_article_content figure.kg-card figcaption,
 #trex_article_content figure.kg-gallery-card figcaption {
-  text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+    @apply text-center text-sm;
 }
 
 #trex_article_content .kg-bookmark-title {
-  font-size: 1rem;
-  line-height: 1.5rem;
+    @apply text-base;
 }
 
 #trex_article_content .kg-bookmark-description,
 #trex_article_content .kg-bookmark-author,
 #trex_article_content .kg-bookmark-publisher {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+    @apply text-sm;
 }
 
 #trex_article_content .kg-bookmark-icon {
-  margin: 0px;
-  height: 1.5rem;
-  width: 1.5rem;
+    @apply m-0 w-6 h-6;
 }
 
 #trex_article_content .kg-bookmark-metadata {
-  align-items: center;
-}
-
-#trex_article_content .kg-bookmark-metadata > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+    @apply items-center space-x-3;
 }
 
 #trex_article_content .kg-bookmark-thumbnail img {
-  margin: 0px;
+    @apply m-0;
 }
 
 #trex_article_content .kg-image-card.kg-width-wide {
-  position: relative;
-  right: 50%;
-  left: 50%;
-  width: calc(70vw);
-  margin-left: calc(-35vw);
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: calc(70vw);
+    margin-left: calc(-35vw);
 }
 
 #trex_article_content .kg-image-card.kg-width-full {
-  position: relative;
-  right: 50%;
-  left: 50%;
-  width: calc(90vw);
-  margin-left: -45vw;
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: calc(90vw);
+    margin-left: -45vw;
 }
 
 #trex_article_content .kg-style-dark strong {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+    @apply text-white;
 }
 
 #trex_article_content .kg-header-card {
-  position: relative;
-  right: 50%;
-  left: 50%;
-  width: 100vw;
-  border-radius: 0;
-  margin-left: -50vw;
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 100vw;
+    border-radius: 0;
+    margin-left: -50vw;
 }
 
 #trex_article_content .kg-button-card {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+    @apply my-6;
 }
 
 #trex_article_content .kg-audio-seek-slider {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  #trex_article_content .kg-audio-seek-slider {
-    display: block;
-  }
+    @apply hidden md:block;
 }
 
 #trex_article_content .kg-audio-title {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  #trex_article_content .kg-audio-title {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
+    @apply text-base md:text-lg;
 }
 
 #trex_article_content .kg-audio-card,
 #trex_article_content .kg-file-card {
-  overflow-x: hidden;
+    @apply overflow-x-hidden;
 }
 
 #trex_article_content .kg-callout-card,
 #trex_article_content .kg-callout-card strong {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+    @apply text-black;
 }
 
 #trex_article_content .kg-callout-card {
-  margin-bottom: 1rem;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+    @apply mb-4 rounded-t-none;
 }
 
 #trex_article_content .kg-audio-card,
 #trex_article_content .kg-file-card {
-  margin-bottom: 1.7777778em;
+    margin-bottom: 1.7777778em;
 }
 
 #trex_article_content .kg-toggle-card {
-  border-radius: 0px;
+    @apply rounded-none;
 }
 
 #trex_article_content .kg-toggle-heading {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+    @apply text-lg;
 }
 
 #trex_article_content .kg-video-container {
-  display: block;
+    @apply block;
 }
 
 #trex_article_content .kg-callout-card-grey {
-  background-color: #efefef !important;
+    background-color: #efefef !important;
 }
 
 #trex_article_content .kg-callout-card-white {
-  background-color: #fff !important;
+    background-color: #fff !important;
 }
 
 #trex_article_content .kg-callout-card-blue {
-  background-color: #c7eaf9 !important;
+    background-color: #c7eaf9 !important;
 }
 
 #trex_article_content .kg-callout-card-green {
-  background-color: #ccedd0 !important;
+    background-color: #ccedd0 !important;
 }
 
 #trex_article_content .kg-card.kg-callout-card-yellow {
-  background-color: #fdf3df !important;
+    background-color: #fdf3df !important;
 }
 
 #trex_article_content .kg-card.kg-callout-card-purple {
-  background-color: #f0eafd !important;
+    background-color: #f0eafd !important;
 }
 
 #trex_article_content .kg-card.kg-callout-card-pink {
-  background-color: #fcebf6 !important;
+    background-color: #fcebf6 !important;
 }
 
 #trex_article_content .kg-callout-card-red {
-  background-color: #f8d1eb !important;
+    background-color: #f8d1eb !important;
 }
 
 #trex_article_content .kg-video-container video {
-  width: 100% !important;
-}
+    width: 100% !important;
+} */
 
 .project-intro {
   display: flex;

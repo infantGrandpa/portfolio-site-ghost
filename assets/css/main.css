@@ -211,7 +211,7 @@ form.success .hide_success {
 }
 
 /* Post Content */
-
+/* 
 #trex_project_infos {
     display: none;
 }
@@ -363,7 +363,7 @@ form.success .hide_success {
 
 #trex_article_content .kg-video-container video {
     width: 100% !important;
-}
+} */
 
 .project-intro {
     display: flex;
