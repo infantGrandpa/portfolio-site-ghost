@@ -356,3 +356,8 @@ form.success .hide_success {
 #trex_article_content .kg-video-container video {
     width: 100% !important;
 }
+
+.project-intro {
+    display: flex;
+    flex-direction: row;
+}

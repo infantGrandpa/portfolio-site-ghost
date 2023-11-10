@@ -2610,6 +2610,11 @@ form.success .hide_success {
   width: 100% !important;
 }
 
+.project-intro {
+  display: flex;
+  flex-direction: row;
+}
+
 :is(.dark .dark\:prose-invert) {
   --tw-prose-body: var(--tw-prose-invert-body);
   --tw-prose-headings: var(--tw-prose-invert-headings);
