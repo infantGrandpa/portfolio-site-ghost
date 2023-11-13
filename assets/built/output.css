@@ -452,7 +452,7 @@ h3 {
   font-family: "Quantico";
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
   h1 {
     font-size: 3.75rem;
     line-height: 1;
@@ -1386,18 +1386,6 @@ h3 {
 
 .sticky {
   position: sticky;
-}
-
-.-right-4 {
-  right: -1rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .col-span-2 {
@@ -2842,10 +2830,6 @@ form.success .hide_success {
   text-decoration-line: underline;
 }
 
-.hover\:underline-offset-8:hover {
-  text-underline-offset: 8px;
-}
-
 .hover\:main-bg:hover {
   background: var(--main-color);
 }
@@ -2970,12 +2954,12 @@ form.success .hide_success {
     margin-right: 1.25rem;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:\!flex {
     display: flex !important;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
@@ -3026,8 +3010,9 @@ form.success .hide_success {
     background-color: transparent;
   }
 
-  .md\:p-0 {
-    padding: 0px;
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .md\:px-24 {
@@ -3038,11 +3023,6 @@ form.success .hide_success {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .md\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 
   .md\:text-2xl {
@@ -3142,14 +3122,6 @@ form.success .hide_success {
 }
 
 @media (min-width: 1280px) {
-  .xl\:\!visible {
-    visibility: visible !important;
-  }
-
-  .xl\:static {
-    position: static;
-  }
-
   .xl\:ml-32 {
     margin-left: 8rem;
   }
@@ -3162,14 +3134,6 @@ form.success .hide_success {
     display: block;
   }
 
-  .xl\:\!flex {
-    display: flex !important;
-  }
-
-  .xl\:hidden {
-    display: none;
-  }
-
   .xl\:w-\[60vw\] {
     width: 60vw;
   }
@@ -3178,47 +3142,9 @@ form.success .hide_success {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-
-  .xl\:items-center {
-    align-items: center;
-  }
-
-  .xl\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2rem * var(--tw-space-x-reverse));
-    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .xl\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .xl\:\!border-0 {
-    border-width: 0px !important;
-  }
-
-  .xl\:bg-transparent {
-    background-color: transparent;
-  }
-
-  .xl\:p-0 {
-    padding: 0px;
-  }
-
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .xl\:\!shadow-none {
-    --tw-shadow: 0 0 #0000 !important;
-    --tw-shadow-colored: 0 0 #0000 !important;
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
   }
 }
 

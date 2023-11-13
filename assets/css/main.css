@@ -21,7 +21,7 @@
         @apply text-2xl display-font;
     }
 
-    @media (max-width: 1280px) {
+    @media (min-width: 1280px) {
         h1 {
             @apply text-6xl;
         }
