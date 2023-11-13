@@ -2347,7 +2347,6 @@ form.success .hide_success {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-color);
   opacity: 0;
 }
 
