@@ -11,18 +11,20 @@
         </div>
 
         <form class="mt-10 max-w-[550px] mx-auto" data-members-form="subscribe">
-            <div class="relative">
+            <div
+                class="relative flex flex-row main-color bg-white rounded-lg text-sm"
+            >
                 <input
                     data-members-email
                     type="email"
-                    placeholder="{{t 'email adress'}}"
-                    class="second-color rounded-lg text-sm border border-gray-200 px-4 py-4 placeholder:text-xs placeholder:uppercase block !outline-none w-full placeholder:text-grey"
+                    placeholder="{{t 'email address'}}"
+                    class="main-color rounded-lg text-sm px-4 py-4 placeholder:text-xs placeholder:uppercase block !outline-none w-full placeholder:text-grey"
                     required
                     autocomplete="off"
                 />
                 <button
                     type="submit"
-                    class="rounded-lg absolute right-2 top-1 bottom-1 py-3 text-[11px] tracking-wide uppercase font-bold second-bg main-color hover:main-bg hover:text-white inline-block px-8 transition-colors text-white"
+                    class="rounded-lg py-3 text-xs tracking-wide uppercase font-bold second-bg main-color hover:scale-125 inline-block px-8 transition-transform duration-300 ease-out-back"
                 >
                     {{t "subscribe"}}
                 </button>

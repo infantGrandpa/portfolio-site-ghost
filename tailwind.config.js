@@ -3,6 +3,13 @@ module.exports = {
     content: ["./assets/js/main.js", "./**/*.{html,hbs}"],
     darkMode: "class",
     theme: {
+        extend: {
+            transitionTimingFunction: {
+                "in-expo": "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
+                "out-expo": "cubic-bezier(0.19, 1, 0.22, 1)",
+                "out-back": "cubic-bezier(0.34, 1.56, 0.64, 1);",
+            },
+        },
         fontFamily: {
             body: ["Montserrat", "sans-serif"],
         },
