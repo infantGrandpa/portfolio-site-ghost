@@ -12,13 +12,13 @@
 
     <div>
         <nav class="relative">
-            <button class="block xl:hidden" id="trex_open_menu">
+            <button class="block md:hidden" id="trex_open_menu">
                 <i class="fa-solid fa-bars fa-xl main-color"></i>
             </button>
-            <ul class="list-none main-color text-sm font-semibold flex-col absolute top-10 -right-4 hidden border border-gray-100 xl:!border-0 xl:!flex bg-white shadow-lg xl:!shadow-none xl:!visible xl:bg-transparent xl:static xl:flex-row xl:items-center xl:space-x-8 xl:space-y-0 z-50" id="trex_menu">
+            <ul class="main-color text-sm font-semibold flex-col absolute top-10 -right-4 hidden border border-gray-100 md:!border-0 md:!flex bg-white shadow-lg md:!shadow-none md:!visible md:bg-transparent md:static md:flex-row md:items-center md:space-x-8 md:space-y-0 z-50" id="trex_menu">
                 {{#foreach navigation}}
-                    <li>
-                        <a href="{{url absolute="true"}}" class="py-3 pr-32 pl-5 xl:p-0 block hover:main-color {{#if current}}main-color{{/if}}">
+                    <li class="list-none">
+                        <a href="{{url absolute="true"}}" class="py-3 pr-32 pl-5 md:p-0 block hover:underline underline-offset-8 {{#if current}}underline{{/if}}">
                             {{label}}
                         </a>
                     </li>
