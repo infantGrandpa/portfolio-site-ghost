@@ -15,10 +15,10 @@
             <button class="block md:hidden" id="trex_open_menu">
                 <i class="fa-solid fa-bars fa-xl main-color"></i>
             </button>
-            <ul class="main-color text-sm font-semibold flex-col absolute top-10 -right-4 hidden border border-gray-100 md:!border-0 md:!flex bg-white shadow-lg md:!shadow-none md:!visible md:bg-transparent md:static md:flex-row md:items-center md:space-x-8 md:space-y-0 z-50" id="trex_menu">
+            <ul class="main-color text-xl font-semibold flex-col hidden border border-gray-100 md:!border-0 md:!flex bg-white shadow-lg md:!shadow-none md:!visible md:bg-transparent md:static md:flex-row md:items-center md:space-x-8 md:space-y-0" id="trex_menu">
                 {{#foreach navigation}}
                     <li class="list-none">
-                        <a href="{{url absolute="true"}}" class="py-3 pr-32 pl-5 md:p-0 block hover:underline underline-offset-8 {{#if current}}underline{{/if}}">
+                        <a href="{{url absolute="true"}}" class="py-3 pr-32 pl-5 md:py-0 md:px-2 block hover:underline underline-offset-8 {{#if current}}underline{{/if}}">
                             {{label}}
                         </a>
                     </li>
