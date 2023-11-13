@@ -1,20 +1,20 @@
 <article class="h-auto bg-white rounded-[32px] p-6 shadow-md trex_post md:flex md:flex-row">
-    {{!-- {{^has tag="#project"}}
+    {{^has tag="#project"}}
         <div class="flex justify-between flex-col mb-5 sm:mb-0 sm:flex-row">
             <div class="flex space-x-2 justify-center sm:justify-end">
                 {{#if featured}}
                     <div class="h-[40px] w-[40px] flex justify-center items-center bg-[#f6f7f8] rounded-full border-gray-200 border" data-tippy-content="{{t 'Featured post'}}" data-tippy-placement="bottom" data-tippy-animation="fade">
-                        {{> 'icons/star'}}
+                        <i class="fa-solid fa-star"></i>
                     </div>
                 {{/if}}
                 {{#unless access}}
                     <div class="h-[40px] w-[40px] flex justify-center items-center bg-[#f6f7f8] rounded-full border-gray-200 border" data-tippy-content="{{t 'Locked'}}" data-tippy-placement="bottom" data-tippy-animation="fade">
-                        {{> 'icons/lock'}}
+                        <i class="fa-solid fa-lock"></i>
                     </div>
                 {{/unless}}
             </div>
         </div>
-    {{/has}} --}}
+    {{/has}}
     {{#if feature_image}}
         <div class="relative mb-5 md:mb-0 md:mr-5 w-full">
             <a href="{{url}}" class="rounded-lg relative overflow-hidden aspect-square md:aspect-auto w-full h-full block">

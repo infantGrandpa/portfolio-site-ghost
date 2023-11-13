@@ -14,12 +14,12 @@
                             <div class="flex space-x-2 sm:justify-end">
                                 {{#if featured}}
                                     <div class="h-[40px] w-[40px] flex justify-center items-center bg-[#f6f7f8] rounded-full border-gray-200 border" data-tippy-content="{{t 'Featured post'}}" data-tippy-placement="bottom" data-tippy-animation="fade">
-                                        {{> 'icons/star'}}
+                                        <i class="fa-solid fa-star"></i>
                                     </div>
                                 {{/if}}
                                 {{#unless access}}
                                     <div class="h-[40px] w-[40px] flex justify-center items-center bg-[#f6f7f8] rounded-full border-gray-200 border" data-tippy-content="{{t 'Locked'}}" data-tippy-placement="bottom" data-tippy-animation="fade">
-                                        {{> 'icons/lock'}}
+                                        <i class="fa-solid fa-lock"></i>
                                     </div>
                                 {{/unless}}
                                 {{#if comments}}
@@ -99,19 +99,19 @@
                         <span class="uppercase display-font text-sm">{{t "share"}}</span>
                         <div class="flex justify-center space-x-3 mt-4">
                             <a href="https://www.facebook.com/share.php?u={{url absolute="true"}}" class="w-[40px] h-[40px] flex justify-center items-center bg-[#f6f7f8] hover:bg-gray-100">
-                                {{> 'icons/facebook-share'}}
+                                <i class="fa-brands fa-square-facebook"></i>
                             </a>
                             <a href="https://twitter.com/intent/tweet?text={{url absolute="true"}}" class="w-[40px] h-[40px] flex justify-center items-center bg-[#f6f7f8] hover:bg-gray-100">
-                                {{> 'icons/twitter-share'}}
+                                <i class="fa-brands fa-square-twitter"></i>
                             </a>
                             <a href="https://www.linkedin.com/shareArticle?mini=true&title={{title}}=&url={{url absolute="true"}}" class="w-[40px] h-[40px] flex justify-center items-center bg-[#f6f7f8] hover:bg-gray-100">
-                                {{> 'icons/linkedin-share'}}
+                                <i class="fa-brands fa-linkedin"></i>
                             </a>
                             <a href="http://pinterest.com/pin/create/link/?url={{url absolute="true"}}" class="w-[40px] h-[40px] flex justify-center items-center bg-[#f6f7f8] hover:bg-gray-100">
-                                {{> 'icons/pinterest-share'}}
+                                <i class="fa-brands fa-square-pinterest"></i>
                             </a>
                             <button id="trex_copy" class="w-[40px] h-[40px] flex justify-center items-center bg-[#f6f7f8] hover:bg-gray-100">
-                                {{> 'icons/copy'}}
+                                <i class="fa-solid fa-copy"></i>
                             </button>
                         </div>
                         <div class="text-grey text-xs font-medium mt-4 hidden" id="trex_copy_msg">

@@ -68,25 +68,38 @@
                 </div>
             </div>
 
-            {{!-- <!-- Social -->
-            <div class="flex items-center justify-center lg:ml-auto space-x-6 h-full">
+            <!-- Social -->
+            <div
+                class="flex items-center justify-center lg:ml-auto space-x-6 h-full"
+            >
                 {{#if @site.facebook}}
-                    <a href="https://facebook.com/{{@site.facebook}}" target="_blank" class="stroke-white">
-                        {{> 'icons/facebook'}}
+                    <a
+                        href="https://facebook.com/{{@site.facebook}}"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-facebook text-white"></i>
                     </a>
                 {{/if}}
                 {{#if @site.twitter}}
-                    <a href="https://twitter.com/{{@site.twitter}}" target="_blank" class="stroke-white">
-                        {{> 'icons/twitter'}}
+                    <a
+                        href="https://twitter.com/{{@site.twitter}}"
+                        target="_blank"
+                        class="stroke-white"
+                    >
+                        <i class="fa-brands fa-twitter text-white"></i>
                     </a>
                 {{/if}}
                 {{#if @custom.instagram_link}}
-                    <a href="{{@custom.instagram_link}}" target="_blank" class="stroke-white">
-                        {{> 'icons/instagram'}}
+                    <a
+                        href="{{@custom.instagram_link}}"
+                        target="_blank"
+                        class="stroke-white"
+                    >
+                        <i class="fa-brands fa-instagram text-white"></i>
                     </a>
                 {{/if}}
             </div>
-            <!-- End Social --> --}}
+            <!-- End Social -->
 
         </div>
 
