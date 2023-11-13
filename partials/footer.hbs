@@ -5,20 +5,38 @@
         </div>
 
         <div class="text-sm text-white">
-            {{t "Subscribe now to get notified about excluive stories from the writing every week!"}}
+            {{t
+                "Subscribe now to get notified about excluive stories from the writing every week!"
+            }}
         </div>
 
         <form class="mt-10 max-w-[550px] mx-auto" data-members-form="subscribe">
             <div class="relative">
-                <input data-members-email type="email"  placeholder="{{t 'email adress'}}" class="second-color rounded-lg text-sm border border-gray-200 px-4 py-4 placeholder:text-xs placeholder:uppercase block !outline-none w-full placeholder:text-grey" required autocomplete="off">
-                <button type="submit" class="rounded-lg absolute right-2 top-1 bottom-1 py-3 text-[11px] tracking-wide uppercase font-bold second-bg main-color hover:main-bg hover:text-white inline-block px-8 transition-colors text-white">
+                <input
+                    data-members-email
+                    type="email"
+                    placeholder="{{t 'email adress'}}"
+                    class="second-color rounded-lg text-sm border border-gray-200 px-4 py-4 placeholder:text-xs placeholder:uppercase block !outline-none w-full placeholder:text-grey"
+                    required
+                    autocomplete="off"
+                />
+                <button
+                    type="submit"
+                    class="rounded-lg absolute right-2 top-1 bottom-1 py-3 text-[11px] tracking-wide uppercase font-bold second-bg main-color hover:main-bg hover:text-white inline-block px-8 transition-colors text-white"
+                >
                     {{t "subscribe"}}
                 </button>
             </div>
             <div class="mt-2 text-left font-medium text-white italic">
-                <small class="alert-loading block">{{t "Processing your application..."}}</small>
-                <small class="alert-success block">{{t "Please check your inbox and click the link to confirm your subscription..."}}</small>
-                <small class="alert-error block">{{t "There was an error sending the email..."}}</small>
+                <small class="alert-loading block">{{t
+                        "Processing your application..."
+                    }}</small>
+                <small class="alert-success block">{{t
+                        "Please check your inbox and click the link to confirm your subscription..."
+                    }}</small>
+                <small class="alert-error block">{{t
+                        "There was an error sending the email..."
+                    }}</small>
             </div>
         </form>
 
@@ -29,19 +47,26 @@
             <div class="text-center">
                 {{#if @site.logo}}
                     <a href="{{@site.url}}">
-                        <img src="{{@site.logo}}" alt="{{@site.title}}" class="max-w-[110px] mx-auto block" />
+                        <img
+                            src="{{@site.logo}}"
+                            alt="{{@site.title}}"
+                            class="max-w-[110px] mx-auto block"
+                        />
                     </a>
                 {{else}}
                     <a href="{{@site.url}}">
-                        <span class="text-4xl font-bold tracking-tighter">{{@site.title}}</span>
+                        <span
+                            class="text-4xl font-bold tracking-tighter"
+                        >{{@site.title}}</span>
                     </a>
                 {{/if}}
                 <div class="text-center text-xs mt-4 text-grey font-semibold">
-                    &copy; 2021-{{date format="YYYY"}} <a href="{{@site.url}}">{{@site.title}}</a>
+                    &copy; 2021-{{date format="YYYY"}}
+                    <a href="{{@site.url}}">{{@site.title}}</a>
                 </div>
             </div>
 
-            <!-- Social -->
+            {{!-- <!-- Social -->
             <div class="flex items-center justify-center lg:ml-auto space-x-6 h-full">
                 {{#if @site.facebook}}
                     <a href="https://facebook.com/{{@site.facebook}}" target="_blank" class="stroke-white">
@@ -59,7 +84,7 @@
                     </a>
                 {{/if}}
             </div>
-            <!-- End Social -->
+            <!-- End Social --> --}}
 
         </div>
 
