@@ -1,21 +1,21 @@
-<footer class="text-center py-16">
+<footer class="text-center py-16 bg-main">
     <div class="container">
-        <div class="text-3xl main-color display-font mb-2">
+        <div class="text-3xl text-white display-font mb-2">
             {{t "Sign up to our newsletters"}}
         </div>
 
-        <div class="text-sm text-grey">
+        <div class="text-sm text-white">
             {{t "Subscribe now to get notified about excluive stories from the writing every week!"}}
         </div>
 
         <form class="mt-10 max-w-[550px] mx-auto" data-members-form="subscribe">
             <div class="relative">
                 <input data-members-email type="email"  placeholder="{{t 'email adress'}}" class="second-color rounded-lg text-sm border border-gray-200 px-4 py-4 placeholder:text-xs placeholder:uppercase block !outline-none w-full placeholder:text-grey" required autocomplete="off">
-                <button type="submit" class="rounded-lg absolute right-2 top-1 bottom-1 py-3 text-[11px] tracking-wide uppercase font-bold second-bg hover:main-bg inline-block px-8 transition-all duration-75 text-white">
+                <button type="submit" class="rounded-lg absolute right-2 top-1 bottom-1 py-3 text-[11px] tracking-wide uppercase font-bold second-bg main-color hover:main-bg hover:text-white inline-block px-8 transition-colors text-white">
                     {{t "subscribe"}}
                 </button>
             </div>
-            <div class="mt-2 text-left font-medium text-grey italic">
+            <div class="mt-2 text-left font-medium text-white italic">
                 <small class="alert-loading block">{{t "Processing your application..."}}</small>
                 <small class="alert-success block">{{t "Please check your inbox and click the link to confirm your subscription..."}}</small>
                 <small class="alert-error block">{{t "There was an error sending the email..."}}</small>
@@ -44,17 +44,17 @@
             <!-- Social -->
             <div class="flex items-center justify-center lg:ml-auto space-x-6 h-full">
                 {{#if @site.facebook}}
-                    <a href="https://facebook.com/{{@site.facebook}}" target="_blank">
+                    <a href="https://facebook.com/{{@site.facebook}}" target="_blank" class="stroke-white">
                         {{> 'icons/facebook'}}
                     </a>
                 {{/if}}
                 {{#if @site.twitter}}
-                    <a href="https://twitter.com/{{@site.twitter}}" target="_blank">
+                    <a href="https://twitter.com/{{@site.twitter}}" target="_blank" class="stroke-white">
                         {{> 'icons/twitter'}}
                     </a>
                 {{/if}}
                 {{#if @custom.instagram_link}}
-                    <a href="{{@custom.instagram_link}}" target="_blank">
+                    <a href="{{@custom.instagram_link}}" target="_blank" class="stroke-white">
                         {{> 'icons/instagram'}}
                     </a>
                 {{/if}}
