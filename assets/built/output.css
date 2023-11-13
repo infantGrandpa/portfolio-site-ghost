@@ -1591,6 +1591,10 @@ h3 {
   width: 100%;
 }
 
+.max-w-2xl {
+  max-width: 42rem;
+}
+
 .max-w-\[1000px\] {
   max-width: 1000px;
 }

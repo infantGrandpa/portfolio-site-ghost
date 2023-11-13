@@ -4,7 +4,7 @@
     {{#post}}
     <div>
         <article class="{{post_class}}">
-            <div class="main-bg py-12">
+            <div class="main-bg py-6">
                 <div class="container">
                     <div class="">
                         <div class="flex justify-between sm:items-center flex-col space-y-3 sm:space-y-0 sm:flex-row">
@@ -24,12 +24,12 @@
                                 {{/unless}}
                                 {{#if comments}}
                                     <div class="px-3 self-center py-2 text-xs font-semibold flex justify-center items-center bg-[#f6f7f8] rounded-full border-gray-200 border">
-                                        {{comment_count empty="0 comments" singular="omment" plural="comments"}}
+                                        {{comment_count empty="0 comments" singular="comment" plural="comments"}}
                                     </div>
                                 {{/if}}
                             </div>
                         </div>
-                        <h1 class="display-font text-white mt-4">
+                        <h1 class="display-font text-white">
                             {{title}}
                         </h1>
                         <div class="text-base font-medium text-white mt-4">
@@ -63,6 +63,7 @@
                                 </div>
                             </div>
                             <div class="text-xs text-white font-medium">
+                                <i class="fa-regular fa-clock"></i>
                                 <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
                                 <span> - </span>
                                 <span>{{reading_time}}</span>
@@ -78,7 +79,7 @@
                                     <img class="rounded-[32px] hover:scale-[1.08] transition duration-300 ease-in-out lazyload fadeup absolute object-cover object-top w-full h-full" src="{{img_url feature_image size="xxs"}}" data-src="{{img_url feature_image size="xl"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
                                 </div>
                                 {{#if feature_image_caption}}
-                                    <figcaption class="pl-6 text-xs mt-2 text-white font-medium"> 
+                                    <figcaption class="text-xs mt-2 text-white text-center"> 
                                     {{feature_image_caption}}
                                     </figcaption>
                                 {{/if}}
@@ -91,7 +92,7 @@
             </div>
 
             <div class="container">
-                <div class="max-w-[1100px] mx-auto px-10 pt-4">
+                <div class="max-w-2xl mx-auto pt-4">
                     <div  id="trex_article_content" class="prose-base prose-img:m-0 prose-hr:border-gray-200 font-medium prose-headings:main-color prose-figcaption:main-color">
                         {{content}}
                     </div>
