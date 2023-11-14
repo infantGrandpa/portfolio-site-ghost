@@ -1,8 +1,8 @@
 {{#if isSecondary}}
-    <ul class="text-white text-sm font-semibold flex justify-center space-x-10 lg:justify-start items-center list-none">
+    <ul class="text-white font-semibold flex justify-center space-x-10 lg:justify-start items-center list-none">
         {{#foreach navigation}}
             <li class="list-none">
-                <a href="{{url absolute="true"}}" class="hover:main-color {{#if current}}main-color{{/if}}">
+                <a href="{{url absolute="true"}}" class="hover:underline underline-offset-4 {{#if current}}underline{{/if}}">
                     {{label}}
                 </a>
             </li>
