@@ -4,9 +4,13 @@
     <div class="container">
         <div class="flex items-center">
             <div>
+                <a href="{{@site.url}}">
+                    {{logo}}
+                </a>
                 {{#if @site.logo}}
                     <a href="{{@site.url}}">
-                        <img src="{{@site.logo}}" alt="{{@site.title}}" class="max-w-[48px] md:max-w-[64px] fill-black">
+                        {{!-- <img src="{{@site.logo}}" alt="{{@site.title}}" class="max-w-[48px] md:max-w-[64px] fill-black"> --}}
+                        {{> 'logo'}}
                     </a>
                 {{else}}
                     <a href="{{@site.url}}" class="text-4xl font-semibold tracking-tighter">

@@ -1619,6 +1619,10 @@ h3 {
   max-width: 140px;
 }
 
+.max-w-\[48px\] {
+  max-width: 48px;
+}
+
 .max-w-\[500px\] {
   max-width: 500px;
 }
@@ -1641,10 +1645,6 @@ h3 {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[48px\] {
-  max-width: 48px;
 }
 
 .flex-1 {
