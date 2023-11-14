@@ -1607,10 +1607,6 @@ h3 {
   max-width: 1100px;
 }
 
-.max-w-\[110px\] {
-  max-width: 110px;
-}
-
 .max-w-\[130px\] {
   max-width: 130px;
 }
@@ -1639,16 +1635,16 @@ h3 {
   max-width: 700px;
 }
 
+.max-w-\[72px\] {
+  max-width: 72px;
+}
+
 .max-w-\[80\%\] {
   max-width: 80%;
 }
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[72px\] {
-  max-width: 72px;
 }
 
 .flex-1 {
@@ -1714,10 +1710,6 @@ h3 {
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
-}
-
-.gap-y-10 {
-  row-gap: 2.5rem;
 }
 
 .gap-y-5 {
@@ -1886,10 +1878,6 @@ h3 {
 
 .fill-white {
   fill: #fff;
-}
-
-.stroke-white {
-  stroke: #fff;
 }
 
 .object-cover {
@@ -2177,6 +2165,10 @@ h3 {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
 }
 
 .underline-offset-8 {
@@ -2977,6 +2969,10 @@ form.success .hide_success {
     margin-bottom: 0px;
   }
 
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+
   .md\:mr-14 {
     margin-right: 3.5rem;
   }
@@ -2987,10 +2983,6 @@ form.success .hide_success {
 
   .md\:mt-12 {
     margin-top: 3rem;
-  }
-
-  .md\:ml-auto {
-    margin-left: auto;
   }
 
   .md\:\!flex {
@@ -3103,10 +3095,6 @@ form.success .hide_success {
     grid-column: span 3 / span 3;
   }
 
-  .lg\:ml-auto {
-    margin-left: auto;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -3141,10 +3129,6 @@ form.success .hide_success {
 
   .lg\:justify-start {
     justify-content: flex-start;
-  }
-
-  .lg\:gap-0 {
-    gap: 0px;
   }
 
   .lg\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
