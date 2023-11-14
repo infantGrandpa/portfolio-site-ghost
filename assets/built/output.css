@@ -2939,6 +2939,10 @@ form.success .hide_success {
     position: static;
   }
 
+  .md\:order-last {
+    order: 9999;
+  }
+
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
