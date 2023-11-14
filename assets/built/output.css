@@ -1388,6 +1388,10 @@ h3 {
   position: sticky;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -2992,6 +2996,10 @@ form.success .hide_success {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:items-center {
