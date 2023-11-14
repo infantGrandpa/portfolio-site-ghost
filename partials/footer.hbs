@@ -1,4 +1,4 @@
-<footer class="text-center py-16 main-bg">
+<footer class="text-center py-8 md:py-12 main-bg">
     <div class="container">
         <div class="text-3xl text-white display-font mb-2">
             {{t "Sign up to our newsletters"}}
@@ -42,7 +42,7 @@
             </div>
         </form>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 mt-24 gap-y-10 lg:gap-0">
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-6 md:mt-12 gap-y-5 md:gap-0">
             {{#if @site.secondary_navigation}}
                 {{navigation type="secondary"}}
             {{/if}}
@@ -58,7 +58,7 @@
 
             <!-- Social -->
             <div
-                class="flex items-center justify-center lg:ml-auto space-x-6 h-full"
+                class="flex items-center justify-center md:ml-auto space-x-6 h-full"
             >
                 {{#if @site.facebook}}
                     <a
