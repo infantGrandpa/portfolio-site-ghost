@@ -4,8 +4,10 @@
     <div class="container">
         <div class="flex items-center">
             <div>
-                <a href="{{@site.url}}" class="max-w-[48px] md:max-w-[64px] fill-black">
-                    {{> 'logo'}}
+                <a href="{{@site.url}}">
+                    {{!-- {{> 'logo'}} --}}
+                    {{> logo svgClasses="max-w-[48px] md:max-w-[64px] fill-black"}}
+
                 </a>
                 {{#if @site.logo}}
                     {{!-- <a href="{{@site.url}}">
