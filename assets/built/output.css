@@ -1397,6 +1397,11 @@ h3 {
   margin-right: 0.75rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1455,10 +1460,6 @@ h3 {
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
 }
 
 .mt-1 {
@@ -1629,6 +1630,10 @@ h3 {
 
 .max-w-\[600px\] {
   max-width: 600px;
+}
+
+.max-w-\[64px\] {
+  max-width: 64px;
 }
 
 .max-w-\[700px\] {
@@ -3125,18 +3130,6 @@ form.success .hide_success {
 }
 
 @media (min-width: 1280px) {
-  .xl\:ml-32 {
-    margin-left: 8rem;
-  }
-
-  .xl\:mr-0 {
-    margin-right: 0px;
-  }
-
-  .xl\:block {
-    display: block;
-  }
-
   .xl\:w-\[60vw\] {
     width: 60vw;
   }
