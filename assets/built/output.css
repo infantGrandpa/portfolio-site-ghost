@@ -1872,6 +1872,10 @@ h3 {
   background-repeat: no-repeat;
 }
 
+.fill-black {
+  fill: #000;
+}
+
 .stroke-white {
   stroke: #fff;
 }
