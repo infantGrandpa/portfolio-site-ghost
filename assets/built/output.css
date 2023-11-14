@@ -1401,11 +1401,6 @@ h3 {
   margin-right: 0.75rem;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1634,10 +1629,6 @@ h3 {
 
 .max-w-\[600px\] {
   max-width: 600px;
-}
-
-.max-w-\[64px\] {
-  max-width: 64px;
 }
 
 .max-w-\[700px\] {
@@ -2994,16 +2985,16 @@ form.success .hide_success {
     min-height: 400px;
   }
 
+  .md\:max-w-\[64px\] {
+    max-width: 64px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
   }
 
   .md\:items-center {
