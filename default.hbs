@@ -25,9 +25,13 @@
 
 <body class="{{body_class}} {{{block "body_class"}}} font-body back-to-top" id="trex_body">
 
+    {{> 'skip-to-content'}}
+
     {{> 'header'}}
 
-    {{{body}}}
+    <div id="content">
+        {{{body}}}
+    </div>
 
     {{> 'footer'}}
     
