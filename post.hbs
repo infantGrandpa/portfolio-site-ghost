@@ -32,35 +32,9 @@
                         <h1 class="display-font text-white">
                             {{title}}
                         </h1>
-                        <div class="text-base font-medium text-white mt-4">
-                            {{excerpt}}
-                        </div>
-                        
-                        <div class="flex justify-between items-center my-6">
-                            <div class="flex items-center space-x-2 justify-center sm:justify-start">
-                                {{!-- <!-- Authors -->
-                                <div class="flex -space-x-4">
-                                    {{#foreach authors}}
-                                        <a href="{{url}}" class="block relative h-[40px] w-[40px] {{#unless profile_image}} second-bg {{/unless}} rounded-full">
-                                            {{#if profile_image}}
-                                                <img src="{{img_url profile_image size="xxs"}}" data-src="{{img_url profile_image size="xs"}}" alt="{{name}}" class="lazyload object-cover absolute w-full h-full rounded-full">
-                                            {{else}}
-                                                <span class="trex_has_text text-white display-font uppercase flex items-center justify-center h-full">
-                                                    {{name}}
-                                                </span>
-                                            {{/if}}
-                                        </a>
-                                    {{/foreach}}
-                                </div> --}}
-                                <!-- End Authors -->
-                                <div class="space-x-1 text-xs text-white font-medium hidden lg:flex">
-                                    {{#foreach authors}}
-                                        <a href="{{url}}" class="hover:underline" title="{{name}}">
-                                            {{name}}
-                                        </a>
-                                        <span class="last:hidden">&</span>
-                                    {{/foreach}}
-                                </div>
+                        <div class="flex justify-between items-center mb-6 mt-4">
+                            <div class="text-base font-medium text-white">
+                                {{excerpt}}
                             </div>
                             <div class="text-xs text-white font-medium">
                                 <i class="fa-regular fa-clock"></i>
@@ -69,7 +43,7 @@
                                 <span>{{reading_time}}</span>
                             </div>
                         </div>
-                        <!-- -->
+                        
                     </div>
                     <div>
                         <div class="h-auto rounded-[32px]">
