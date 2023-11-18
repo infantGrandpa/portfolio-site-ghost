@@ -278,8 +278,16 @@ a.skip-to-content:active {
 }
 
 /* Post Styles */
-
 .post a {
-    @apply underline decoration-2 font-medium;
-    text-decoration-color: var(--second-color);
+    font-weight: 500;
+    background-size: 100% 2px;
+    background-image: linear-gradient(var(--second-color), var(--second-color));
+    background-position: 0% 100%;
+    transition: background-size 300ms ease-in-out;
+    background-repeat: no-repeat;
+}
+
+.post a:hover {
+    background-size: 0% 2px;
+    background-position: 100% 100%;
 }
