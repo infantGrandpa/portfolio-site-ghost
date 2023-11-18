@@ -278,11 +278,7 @@ a.skip-to-content:active {
 }
 
 /* Post Styles */
-#trex_article_content a.no-sweep {
-    @apply underline;
-}
-
-#trex_article_content a:not(.no-sweep) {
+#trex_article_content a {
     @apply sweeping-underline;
 }
 
