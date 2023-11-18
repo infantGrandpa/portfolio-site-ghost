@@ -278,7 +278,8 @@ a.skip-to-content:active {
 }
 
 /* Post Styles */
-.post a {
+.post a,
+.sweeping-underline {
     font-weight: 500;
     background-size: 100% 2px;
     background-image: linear-gradient(var(--second-color), var(--second-color));
@@ -287,7 +288,10 @@ a.skip-to-content:active {
     background-repeat: no-repeat;
 }
 
-.post a:hover {
+.post a:hover,
+.post a:focus,
+.sweeping-underline:hover,
+.sweeping-underline:focus {
     background-size: 0% 2px;
     background-position: 100% 100%;
 }
