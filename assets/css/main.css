@@ -276,3 +276,10 @@ a.skip-to-content:active {
     font-size: 1.2em;
     z-index: 999;
 }
+
+/* Post Styles */
+
+.post a {
+    @apply underline decoration-2 font-medium;
+    text-decoration-color: var(--second-color);
+}

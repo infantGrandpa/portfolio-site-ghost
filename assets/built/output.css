@@ -2519,6 +2519,15 @@ a.skip-to-content:active {
   z-index: 999;
 }
 
+/* Post Styles */
+
+.post a {
+  font-weight: 500;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--second-color);
+}
+
 :is(.dark .dark\:prose-invert) {
   --tw-prose-body: var(--tw-prose-invert-body);
   --tw-prose-headings: var(--tw-prose-invert-headings);
