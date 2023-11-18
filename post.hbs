@@ -7,7 +7,7 @@
             <div class="main-bg py-6">
                 <div class="container">
                     <div>
-                        <div class="flex justify-between sm:items-center flex-col space-y-3 sm:space-y-0 sm:flex-row">
+                        <div class="flex justify-between sm:items-center flex-col space-y-3 sm:space-y-0 sm:flex-row mb-1">
                             <div class="text-sm font-semibold text-white capitalize">
                                 {{tags separator=" - "}}
                             </div>
@@ -36,7 +36,7 @@
                             <div class="text-base text-white">
                                 {{excerpt}}
                             </div>
-                            <div class="text-xs text-white">
+                            <div class="text-xs text-white min-w-fit">
                                 <i class="fa-regular fa-clock"></i>
                                 <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
                                 <span> - </span>
