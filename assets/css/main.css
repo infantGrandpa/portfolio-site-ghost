@@ -298,7 +298,7 @@ a.skip-to-content:active {
 }
 
 blockquote {
-    @apply display-font text-2xl p-6 pl-16 main-color relative;
+    @apply display-font text-2xl p-6 !pl-16 main-color relative;
 
     /* position: relative;
     padding: 1.5rem;

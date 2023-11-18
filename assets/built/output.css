@@ -2558,7 +2558,7 @@ a.skip-to-content:active {
 blockquote {
   position: relative;
   padding: 1.5rem;
-  padding-left: 4rem;
+  padding-left: 4rem !important;
   font-size: 1.5rem;
   line-height: 2rem;
   color: var(--main-color);
