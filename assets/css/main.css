@@ -278,7 +278,14 @@ a.skip-to-content:active {
 }
 
 /* Post Styles */
-.post a,
+#trex_article_content a.no-sweep {
+    @apply underline;
+}
+
+#trex_article_content a:not(.no-sweep) {
+    @apply sweeping-underline;
+}
+
 .sweeping-underline {
     font-weight: 500;
     background-size: 100% 2px;
@@ -288,8 +295,6 @@ a.skip-to-content:active {
     background-repeat: no-repeat;
 }
 
-.post a:hover,
-.post a:focus,
 .sweeping-underline:hover,
 .sweeping-underline:focus {
     background-size: 0% 2px;

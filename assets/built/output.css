@@ -2521,7 +2521,24 @@ a.skip-to-content:active {
 
 /* Post Styles */
 
-.post a,
+.post a.no-sweep {
+  text-decoration-line: underline;
+}
+
+.post a:not(.no-sweep) {
+  font-weight: 500;
+  background-size: 100% 2px;
+  background-image: linear-gradient(var(--second-color), var(--second-color));
+  background-position: 0% 100%;
+  transition: background-size 300ms ease-in-out;
+  background-repeat: no-repeat;
+}
+
+.post a:not(.no-sweep):hover,.post a:not(.no-sweep):focus {
+  background-size: 0% 2px;
+  background-position: 100% 100%;
+}
+
 .sweeping-underline {
   font-weight: 500;
   background-size: 100% 2px;
@@ -2531,8 +2548,6 @@ a.skip-to-content:active {
   background-repeat: no-repeat;
 }
 
-.post a:hover,
-.post a:focus,
 .sweeping-underline:hover,
 .sweeping-underline:focus {
   background-size: 0% 2px;
