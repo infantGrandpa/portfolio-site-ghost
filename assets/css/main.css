@@ -296,3 +296,25 @@ a.skip-to-content:active {
     background-size: 0% 2px;
     background-position: 100% 100%;
 }
+
+blockquote {
+    @apply display-font text-2xl p-6 pl-16 main-color relative;
+
+    /* position: relative;
+    padding: 1.5rem;
+    padding-left: 4rem!important;
+    color: var(--ghost-accent-color);
+    font-family: Quantico;
+    font-size: 1.5rem; */
+}
+
+blockquote:after {
+    @apply absolute second-color;
+
+    content: "”";
+    font-size: 10rem;
+    line-height: 0;
+    top: 79px;
+    left: -12px;
+    z-index: -1;
+}

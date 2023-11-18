@@ -2555,6 +2555,33 @@ a.skip-to-content:active {
   background-position: 100% 100%;
 }
 
+blockquote {
+  position: relative;
+  padding: 1.5rem;
+  padding-left: 4rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--main-color);
+  font-family: "Quantico";
+  /* position: relative;
+    padding: 1.5rem;
+    padding-left: 4rem!important;
+    color: var(--ghost-accent-color);
+    font-family: Quantico;
+    font-size: 1.5rem; */
+}
+
+blockquote:after {
+  position: absolute;
+  color: var(--second-color);
+  content: "”";
+  font-size: 10rem;
+  line-height: 0;
+  top: 79px;
+  left: -12px;
+  z-index: -1;
+}
+
 :is(.dark .dark\:prose-invert) {
   --tw-prose-body: var(--tw-prose-invert-body);
   --tw-prose-headings: var(--tw-prose-invert-headings);
