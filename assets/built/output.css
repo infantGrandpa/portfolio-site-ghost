@@ -1598,6 +1598,11 @@ h3 {
   width: 100%;
 }
 
+.min-w-fit {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -2926,6 +2931,14 @@ a.skip-to-content:active {
   overflow: visible;
   clip: auto;
   white-space: normal;
+}
+
+.prose-headings\:mb-1 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-bottom: 0.25rem;
+}
+
+.prose-headings\:mt-8 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-top: 2rem;
 }
 
 .prose-headings\:main-color :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
