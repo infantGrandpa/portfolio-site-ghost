@@ -33,10 +33,10 @@
                             {{title}}
                         </h1>
                         <div class="flex flex-col space-y-2 items-start md:flex-row md:items-center justify-between mb-6 mt-4">
-                            <div class="text-base font-medium text-white">
+                            <div class="text-base text-white">
                                 {{excerpt}}
                             </div>
-                            <div class="text-xs text-white font-medium">
+                            <div class="text-xs text-white">
                                 <i class="fa-regular fa-clock"></i>
                                 <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
                                 <span> - </span>
@@ -67,7 +67,7 @@
 
             <div class="container">
                 <div class="max-w-2xl mx-auto pt-4">
-                    <div  id="trex_article_content" class="prose-base prose-img:m-0 prose-hr:border-gray-200 font-medium prose-headings:main-color prose-figcaption:main-color">
+                    <div  id="trex_article_content" class="prose-base prose-img:m-0 prose-hr:border-gray-200 prose-headings:main-color prose-figcaption:main-color">
                         {{content}}
                     </div>
                     <div class="border-t border-b border-gray-100 pt-6 pb-9 mt-16 text-center">
@@ -89,7 +89,7 @@
                                 <i class="fa-solid fa-copy"></i>
                             </button>
                         </div>
-                        <div class="text-grey text-xs font-medium mt-4 hidden" id="trex_copy_msg">
+                        <div class="text-xs font-medium mt-4 hidden" id="trex_copy_msg">
                             {{t "The link has been copied!"}}
                         </div>
                     </div>
