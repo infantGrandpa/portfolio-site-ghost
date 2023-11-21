@@ -1404,6 +1404,10 @@ h3 {
   right: 0px;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -1679,10 +1683,6 @@ h3 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1924,6 +1924,10 @@ h3 {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-\[78px\] {
+  padding: 78px;
 }
 
 .px-10 {
@@ -2972,16 +2976,8 @@ blockquote:after {
   margin-top: 2rem;
 }
 
-.prose-headings\:main-color :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  color: var(--main-color);
-}
-
 .prose-headings\:second-color :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   color: var(--second-color);
-}
-
-.prose-figcaption\:main-color :is(:where(figcaption):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  color: var(--main-color);
 }
 
 .prose-figcaption\:second-color :is(:where(figcaption):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
