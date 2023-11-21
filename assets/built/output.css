@@ -2051,6 +2051,10 @@ h3 {
   padding-top: 2rem;
 }
 
+.pt-\[78px\] {
+  padding-top: 78px;
+}
+
 .text-left {
   text-align: left;
 }
