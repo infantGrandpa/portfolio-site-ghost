@@ -2599,6 +2599,22 @@ tr:last-child {
   border-bottom: none;
 }
 
+#trex_article_content .kg-image-card.kg-width-wide {
+  left: 50%;
+  margin-left: -35vw;
+  position: relative;
+  right: 50%;
+  width: 70vw;
+}
+
+#trex_article_content .kg-image-card.kg-width-full {
+  left: 50%;
+  margin-left: -45vw;
+  position: relative;
+  right: 50%;
+  width: 90vw;
+}
+
 :is(.dark .dark\:prose-invert) {
   --tw-prose-body: var(--tw-prose-invert-body);
   --tw-prose-headings: var(--tw-prose-invert-headings);
