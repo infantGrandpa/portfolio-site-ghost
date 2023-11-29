@@ -452,6 +452,12 @@ h3 {
   font-family: "Quantico";
 }
 
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: "Quantico";
+}
+
 @media (min-width: 1280px) {
   h1 {
     font-size: 3.75rem;

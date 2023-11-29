@@ -21,6 +21,10 @@
         @apply text-2xl display-font;
     }
 
+    h4 {
+        @apply text-lg display-font;
+    }
+
     @media (min-width: 1280px) {
         h1 {
             @apply text-6xl;
