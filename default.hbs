@@ -38,6 +38,16 @@
     {{> 'back-to-top'}}
 
     <script src="{{asset "built/build.min.js"}}"></script>
+
+    {{!-- 
+    ***Manually toggle this boolean for development or production*** 
+    true = development
+    false = production
+    --}}
+    {{#if true}}
+        <script src="{{asset "js/dev-scripts.js"}}"></script>
+    {{/if}}
+
     {{ghost_foot}}
 </body>
 </html>
