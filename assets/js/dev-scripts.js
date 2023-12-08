@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Function to replace image URL in src, srcset, and data-src
     function replaceImageUrl(element) {
+        const contentImagesRegex = /.*\/content\/images/;
+
         if (element.src && element.src.includes("/content/images")) {
             element.src = `https://www.brettabraham.com${element.src.replace(
-                "http://localhost:2368",
-                ""
+                contentImagesRegex,
+                "/content/images"
             )}`;
         }
         if (element.srcset) {
@@ -12,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 .split(",")
                 .map((src) => {
                     return src.includes("/content/images")
-                        ? src.replace(
-                              "http://localhost:2368",
-                              "https://www.brettabraham.com"
-                          )
+                        ? `https://www.brettabraham.com${src.replace(
+                              contentImagesRegex,
+                              "/content/images"
+                          )}`
                         : src;
                 })
                 .join(",");
@@ -25,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
             element.dataset.src.includes("/content/images")
         ) {
             element.dataset.src = `https://www.brettabraham.com${element.dataset.src.replace(
-                "http://localhost:2368",
-                ""
+                contentImagesRegex,
+                "/content/images"
             )}`;
         }
     }
