@@ -1,3 +1,3 @@
-My personal portfolio site based on the Square theme by T-Rex Themes. This theme is meant to be used with the Ghost web platform.
+A customized version of the Square theme by T-Rex Themes for my personal portfolio site.
 
 https://www.brettabraham.com/
